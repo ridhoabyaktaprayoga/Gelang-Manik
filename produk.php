@@ -4,7 +4,8 @@
 
 <!-- PRODUK TERBARU -->
 <div class="container">
-	<h2 style=" width: 100%; border-bottom: 4px solid #ff8680"><b>Produk Kami</b></h2>
+
+<h2> <b>Produk</b> </h2>
 
 	<div class="row">
 		<?php 
@@ -49,6 +50,3 @@
 
 </div>
 
- <?php 
-	include 'footer.php';
- ?>
