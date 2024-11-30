@@ -85,6 +85,4 @@ if(isset($_GET['page'])){
 <br>
 <br>
 
-<?php 
-include 'footer.php';
-?>
+

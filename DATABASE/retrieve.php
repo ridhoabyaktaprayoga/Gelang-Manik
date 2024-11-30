@@ -1,11 +1,11 @@
 <?php
 $mysql_host = "localhost";
-$mysql_database = "dbpw192_18410100054";
+$mysql_database = "rdh-manik";
 $mysql_user = "root";
 $mysql_password = "";
 
 $db = new PDO("mysql:host=$mysql_host;dbname=$mysql_database",$mysql_user,$mysql_password);
-$query = file_get_contents("dbpw192_18410100054.sql");
+$query = file_get_contents("rdh-manik.sql");
 $status = $db->prepare($query);
 
 if($status->execute()){

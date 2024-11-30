@@ -73,7 +73,7 @@ else if(strlen($add) == 3){
 						<tr>
 							<th scope="col">No</th>
 							<th scope="col">Kode Material</th>
-							<th scope="col">Nama Material</th>
+							<th scope="col">Nama 250</th>
 						</tr>
 					</thead>
 					<?php 
@@ -164,6 +164,3 @@ else if(strlen($add) == 3){
 <br>
 <br>
 
-<?php 
-include 'footer.php';
-?>

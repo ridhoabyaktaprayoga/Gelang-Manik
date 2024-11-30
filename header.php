@@ -10,7 +10,7 @@ if(isset($_SESSION['kd_cs'])){
 <html>
 
 <head>
-    <title>RDH-Cake Backery</title>
+    <title>RDH Manik-Manik</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
@@ -34,7 +34,7 @@ if(isset($_SESSION['kd_cs'])){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="color:#906F3F"><b>RDH-CAKE BAKERY</b></a>
+                <a class="navbar-brand" href="#" style="color:#906F3F"><b>RDH Manik-Manik</b></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

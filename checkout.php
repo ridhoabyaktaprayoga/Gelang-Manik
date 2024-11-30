@@ -99,7 +99,3 @@ $rows = mysqli_fetch_assoc($cs);
 	</form>
 </div>
 
-
-<?php 
-include 'footer.php';
-?>

@@ -93,6 +93,3 @@ if(isset($_POST['submit'])){
 <br>
 
 
-<?php 
-include 'footer.php';
-?>

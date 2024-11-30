@@ -15,7 +15,7 @@ include 'header.php';
 				<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" style="color:#000;">
 				<div class="panel-heading" style="background-color: #eee;">
 					<h4 class="panel-title">
-						Bagaimana Cara Berbelanja di RDH Bakery ?
+						Bagaimana Cara Berbelanja di RDH Manik-Manik ?
 					</h4>
 				</div>
 				</a>

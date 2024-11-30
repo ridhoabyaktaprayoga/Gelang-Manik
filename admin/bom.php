@@ -99,6 +99,4 @@ $no++;
 		$( "#btn" ).click();
 	});
 </script>
-	<?php 
-	include 'footer.php';
-	?>
+	

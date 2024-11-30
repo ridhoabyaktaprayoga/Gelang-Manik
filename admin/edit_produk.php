@@ -156,6 +156,3 @@ $data = mysqli_fetch_assoc($kode);
 <br>
 <br>
 
-<?php 
-include 'footer.php';
-?>

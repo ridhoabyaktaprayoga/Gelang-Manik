@@ -115,7 +115,7 @@ if($cek_sor > 0){
 	$arr = array_values(array_unique($nama_material));
 	for ($i=0; $i < count($arr); $i++) { 
 
-	 ?>
+?>
 				<tr>
 					<td><?= $i+1 ?></td>
 					<td><?= $arr[$i]; ?></td>
@@ -148,6 +148,3 @@ if($cek_sor > 0){
 	<br>
 
 
-	<?php 
-	include 'footer.php';
-	?>

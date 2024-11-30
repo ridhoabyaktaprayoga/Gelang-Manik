@@ -16,7 +16,7 @@ $row= mysqli_fetch_assoc($result);
 				<div class="form-group">
 					<label for="exampleInputEmail1">Kode Material</label>
 					<input type="text" class="form-control" id="exampleInputEmail1" disabled value="<?= $row['kode_bk']; ?>">
-					<input type="hidden" class="form-control" id="exampleInputEmail1" placeholder="Contoh : Kg atau gram" name="kd_material" value="<?= $row['kode_bk']; ?>">
+					<input type="hidden" class="form-control" id="exampleInputEmail1" placeholder="Contoh : Butir atau gram" name="kd_material" value="<?= $row['kode_bk']; ?>">
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -38,7 +38,7 @@ $row= mysqli_fetch_assoc($result);
 				<div class="form-group">
 					<label for="exampleInputEmail1">Satuan</label>
 					<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Contoh : Kg" name="satuan" value="<?= $row['satuan']; ?>">
-					<p class="help-block">Hanya Masukkan Satuan saja : Kg atau gram</p>
+					<p class="help-block">Hanya Masukkan Satuan saja : Butir atau gram</p>
 				</div>
 			</div>
 		</div>
@@ -48,7 +48,7 @@ $row= mysqli_fetch_assoc($result);
 				<div class="form-group">
 					<label for="exampleInputEmail1">Harga</label>
 					<input type="number" class="form-control" id="exampleInputEmail1"  name="harga" placeholder="Contoh : 1000" value="<?= $row['harga']; ?>">
-					<p class="help-block">Harga termasuk harga per kg atau per 	gram</p>
+					<p class="help-block">Harga termasuk harga per Butir atau per gram</p>
 				</div>
 			</div>
 		</div>
@@ -78,6 +78,3 @@ $row= mysqli_fetch_assoc($result);
 <br>
 <br>
 
-<?php 
-include 'footer.php';
-?>

@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dbpw192_18410100054`
+-- Database: `rdh-manik`
 --
 
 -- --------------------------------------------------------
@@ -59,15 +59,15 @@ CREATE TABLE `bom_produk` (
 --
 
 INSERT INTO `bom_produk` (`kode_bom`, `kode_bk`, `kode_produk`, `nama_produk`, `kebutuhan`) VALUES
-('B0001', 'M0002', 'P0001', 'Roti Sobek', '2'),
-('B0001', 'M0001', 'P0001', 'Roti Sobek', '4'),
-('B0001', 'M0004', 'P0001', 'Roti Sobek', '3'),
-('B0002', 'M0001', 'P0002', 'Maryam', '4'),
-('B0002', 'M0004', 'P0002', 'Maryam', '3'),
-('B0002', 'M0003', 'P0002', 'Maryam', '2'),
-('B0003', 'M0002', 'P0003', 'Kue tart coklat', '2'),
-('B0003', 'M0003', 'P0003', 'Kue tart coklat', '5'),
-('B0003', 'M0005', 'P0003', 'Kue tart coklat', '5');
+('B0001', 'M0002', 'P0001', 'Gelang Manik Hijau', '2'),
+('B0001', 'M0001', 'P0001', 'Gelang Manik Hijau', '4'),
+('B0001', 'M0004', 'P0001', 'Gelang Manik Hijau', '3'),
+('B0002', 'M0001', 'P0002', 'Tasbih Manik Biru', '4'),
+('B0002', 'M0004', 'P0002', 'Tasbih Manik Biru', '3'),
+('B0002', 'M0003', 'P0002', 'Tasbih Manik Biru', '2'),
+('B0003', 'M0002', 'P0003', 'Kalung Manik Pink', '2'),
+('B0003', 'M0003', 'P0003', 'Kalung Manik Pink', '5'),
+('B0003', 'M0005', 'P0003', 'Kalung Manik Pink', '5');
 
 -- --------------------------------------------------------
 
@@ -89,9 +89,9 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`kode_customer`, `nama`, `email`, `username`, `password`, `telp`) VALUES
-('C0002', 'Rafi Akbar', 'a.rafy@gmail.com', 'rafi', '$2y$10$/UjGYbisTPJhr8MgmT37qOXo1o/HJn3dhafPoSYbOlSN1E7olHIb.', '0856748564'),
-('C0003', 'Nagita Silvana', 'bambang@gmail.com', 'Nagita', '$2y$10$47./qEeA/y3rNx3UkoKmkuxoAtmz4ebHSR0t0Bc.cFEEg7cK34M3C', '087804616097'),
-('C0004', 'Nadiya', 'nadiya@gmail.com', 'nadiya', '$2y$10$6wHH.7rF1q3JtzKgAhNFy.4URchgJC8R.POT1osTAWmasDXTTO7ZG', '0898765432');
+('C0002', 'Fajri Belanda', 'fajribelanda@gmail.com', 'Fajri', '$2y$10$/UjGYbisTPJhr8MgmT37qOXo1o/HJn3dhafPoSYbOlSN1E7olHIb.', '0856748564'),
+('C0003', 'Yudha Matraman', 'yudhanihboss@gmail.com', 'Yudha', '$2y$10$47./qEeA/y3rNx3UkoKmkuxoAtmz4ebHSR0t0Bc.cFEEg7cK34M3C', '087804616097'),
+('C0004', 'Rexi Agung', 'rexiagung@gmail.com', 'Rexi', '$2y$10$6wHH.7rF1q3JtzKgAhNFy.4URchgJC8R.POT1osTAWmasDXTTO7ZG', '0898765432');
 
 -- --------------------------------------------------------
 
@@ -113,11 +113,11 @@ CREATE TABLE `inventory` (
 --
 
 INSERT INTO `inventory` (`kode_bk`, `nama`, `qty`, `satuan`, `harga`, `tanggal`) VALUES
-('M0001', 'Tepung', '76', 'Kg', 1000, '2020-07-26'),
-('M0002', 'Pengembang', '0', 'Kg', 1000, '2020-07-27'),
-('M0003', 'Cream', '17', 'Kg', 3000, '2020-07-26'),
-('M0004', 'Keju', '82', 'Kg', 4000, '2020-07-26'),
-('M0005', 'Coklat', '0', 'Kg', 5000, '2020-07-27');
+('M0001', 'Manik Hijau', '100', 'Butir', 1000, '2020-07-26'),
+('M0002', 'Manik Pink', '10', 'Butir', 1000, '2020-07-27'),
+('M0003', 'Manik Biru', '70', 'Butir', 3000, '2020-07-26'),
+('M0004', 'Hiasan', '82', 'Biji', 4000, '2020-07-26'),
+('M0005', 'Tali', '5', 'Helai', 5000, '2020-07-27');
 
 -- --------------------------------------------------------
 
@@ -139,8 +139,8 @@ CREATE TABLE `keranjang` (
 --
 
 INSERT INTO `keranjang` (`id_keranjang`, `kode_customer`, `kode_produk`, `nama_produk`, `qty`, `harga`) VALUES
-(16, 'C0003', 'P0002', 'Maryam', 5, 15000),
-(17, 'C0003', 'P0003', 'Kue tart coklat', 2, 100000);
+(16, 'C0003', 'P0002', 'Tasbih Manik Biru', 5, 15000),
+(17, 'C0003', 'P0003', 'Kalung Manik Pink', 2, 100000);
 
 -- --------------------------------------------------------
 
@@ -161,9 +161,9 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`kode_produk`, `nama`, `image`, `deskripsi`, `harga`) VALUES
-('P0001', 'Roti Sobek', '5f1d915d27dc3.jpg', '																								Roti Enak Sobek Sobek aww\r\n																					', 10000),
-('P0002', 'Maryam', '5f1d9154715a4.jpg', '				Roti araym\r\n						', 15000),
-('P0003', 'Kue tart coklat', '5f1d924614831.jpg', 'Kuetar dengan varian rasa coklat enak dan lumer rasanya\r\n			', 100000);
+('P0001', 'Gelang Manik Hijau', '674b4027f08d9.png', 'Gelang Manik Hijau Keren', 10000),
+('P0002', 'Tasbih Manik Biru', '674b40429b1fb.png', 'Tasbih Manik Biru Untuk Berdzikir', 15000),
+('P0003', 'Kalung Manik Pink', '674b405873439.png', 'Kalung Manik Keren Yang Make Ini Bakal Cantik', 100000);
 
 -- --------------------------------------------------------
 
@@ -195,12 +195,12 @@ CREATE TABLE `produksi` (
 --
 
 INSERT INTO `produksi` (`id_order`, `invoice`, `kode_customer`, `kode_produk`, `nama_produk`, `qty`, `harga`, `status`, `tanggal`, `provinsi`, `kota`, `alamat`, `kode_pos`, `terima`, `tolak`, `cek`) VALUES
-(8, 'INV0001', 'C0002', 'P0003', 'Kue tart coklat', 1, 100000, 'Pesanan Baru', '2020-07-27', 'Jawa Timur', 'Surabaya', 'Jl.Tanah Merah Indah 1', '60129', '2', '1', 1),
-(9, 'INV0002', 'C0002', 'P0001', 'Roti Sobek', 3, 10000, 'Pesanan Baru', '2020-07-27', 'Jawa Barat', 'Bandung', 'Jl.Jati Nangor Blok C, 10', '30712', '0', '0', 1),
-(10, 'INV0003', 'C0003', 'P0002', 'Maryam', 2, 15000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
-(11, 'INV0003', 'C0003', 'P0003', 'Kue tart coklat', 1, 100000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
-(12, 'INV0003', 'C0003', 'P0001', 'Roti Sobek', 1, 10000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
-(13, 'INV0004', 'C0004', 'P0002', 'Maryam', 1, 15000, 'Pesanan Baru', '2020-07-26', 'Jawa Timur', 'Sidoarjo', 'Jl.KH Syukur Blok C 18 A', '50987', '0', '0', 0);
+(8, 'INV0001', 'C0002', 'P0003', 'Kalung Manik Pink', 1, 100000, 'Pesanan Baru', '2020-07-27', 'Jawa Timur', 'Surabaya', 'Jl.Tanah Merah Indah 1', '60129', '2', '1', 1),
+(9, 'INV0002', 'C0002', 'P0001', 'Gelang Manik Hijau', 3, 10000, 'Pesanan Baru', '2020-07-27', 'Jawa Barat', 'Bandung', 'Jl.Jati Nangor Blok C, 10', '30712', '0', '0', 1),
+(10, 'INV0003', 'C0003', 'P0002', 'Tasbih Manik Biru', 2, 15000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
+(11, 'INV0003', 'C0003', 'P0003', 'Kalung Manik Pink', 1, 100000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
+(12, 'INV0003', 'C0003', 'P0001', 'Gelang Manik Hijau', 1, 10000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
+(13, 'INV0004', 'C0004', 'P0002', 'Tasbih Manik Biru', 1, 15000, 'Pesanan Baru', '2020-07-26', 'Jawa Timur', 'Sidoarjo', 'Jl.KH Syukur Blok C 18 A', '50987', '0', '0', 0);
 
 -- --------------------------------------------------------
 

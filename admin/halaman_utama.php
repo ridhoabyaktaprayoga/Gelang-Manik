@@ -63,6 +63,3 @@ $jml3 = mysqli_num_rows($result3);
 <br>
 
 <br>
-<?php 
-include 'footer.php';
-?>

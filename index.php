@@ -4,7 +4,9 @@ include 'header.php';
 <!-- IMAGE -->
 <div class="container-fluid" style="margin: 0;padding: 0;">
     <div class="image" style="margin-top: -21px">
-        <img src="image/home/3.png" style="width: 100%;  height: 650px;">
+<!--ubah style background dibawah menjadi flexible di setiap ukuran -->
+<img src="image/home/background-manik.png" style="width: 100vw; height: 100vh; object-fit: cover; display: block;">
+
     </div>
 </div>
 <br>
@@ -63,3 +65,4 @@ include 'header.php';
 <br>
 <br>
 <br>
+

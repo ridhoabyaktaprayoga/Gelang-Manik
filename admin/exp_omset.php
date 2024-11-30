@@ -19,7 +19,7 @@
 		header("Content-Disposition: attachment; filename=Laporan Omset.xls");
 		header("Pragma: no-cache");
 		header("Expires: 0");
-		$conn = mysqli_connect("localhost", "root", "", "dbpw192_18410100054");
+		$conn = mysqli_connect("localhost", "root", "", "rdh-manik");
 		$date1 = $_POST['date1'];
 		$date2 = $_POST['date2'];
 		$result = mysqli_query($conn, "SELECT * FROM produksi WHERE terima = 1 and tanggal between '$date1' and '$date2'");

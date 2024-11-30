@@ -10,7 +10,7 @@
 <html>
 
 <head>
-    <title>RDH Backery</title>
+    <title>RDH Manik-Manik</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
@@ -22,7 +22,7 @@
 
 <body>
     <script type="text/javascript">
-    alert('SEKEDAR MEMBERI INFORMASI KEPADA PAK BAMABANG UNTUK LOGIN ADMIN \n \n Username = admin \n Password = admin');
+    alert('SEKEDAR MEMBERI INFORMASI UNTUK LOGIN ADMIN \n \n Username = admin \n Password = admin');
     </script>
     <script type="text/javascript">
     $(document).ready(function() {
